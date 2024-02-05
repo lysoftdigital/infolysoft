@@ -87,13 +87,27 @@ https://templatemo.com/tm-570-chain-app-dev
       opacity: 0; /* Hace el texto dentro del span transparente (invisible) */
       margin-left: -58px; /* Mueve el texto hacia la izquierda */
     }
-    h2 {
-      display: inline-block;
-      background: linear-gradient(to right, #ffffff, #ffb6b6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+/* Estilos para dispositivos de escritorio */
+/* Estilos para dispositivos de escritorio */
+/* Estilos para dispositivos de escritorio */
+h2 {
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(to right, #ffffff, #ffb6b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  h2 {
+    color: #ffffff; /* Cambia el color del texto al color del degradado */
+    background: none; /* Elimina cualquier fondo en dispositivos móviles */
+  }
+}
+
+
+
 
     .text-placeholder {
       height: 1em; /* Altura fija para el espacio reservado */
